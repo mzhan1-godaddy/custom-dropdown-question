@@ -25,27 +25,18 @@ function App() {
 
     return (
         <div className="App">
-            <OutlinedCard title={<code>{'<CustomDropdown/>'}</code>}>
+            <Card title={<code>{'<CustomDropdown/>'}</code>}>
                 <CustomDropdown id="dinner" items={dinnerItems} onChange={onChange}/>
-            </OutlinedCard>
+            </Card>
 
-            <OutlinedCard title={"onChange(event)"}>
+            <Card title={<code>{'onChange(event)'}</code>}>
                 <code>
                     <pre>
                         {JSON.stringify(change, null, 2)}
                     </pre>
                 </code>
-            </OutlinedCard>
+            </Card>
         </div>
-    );
-}
-
-export function OutlinedCard({title, children}) {
-    return (
-        <Card>
-            {title}
-            <div className="card-content">{children}</div>
-        </Card>
     );
 }
 
