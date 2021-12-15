@@ -17,6 +17,15 @@ function App() {
         createItem('Apple', 'food-apple'),
         createItem('Burger', 'food-burger'),
         createItem('Pizza', 'food-pizza'),
+        createItem('Apple', 'food-apple'),
+        createItem('Burger', 'food-burger'),
+        createItem('Pizza', 'food-pizza'),
+        createItem('Apple', 'food-apple'),
+        createItem('Burger', 'food-burger'),
+        createItem('Pizza', 'food-pizza'),
+        createItem('Apple', 'food-apple'),
+        createItem('Burger', 'food-burger'),
+        createItem('Pizza', 'food-pizza'),
     ];
 
     function onChange(event) {
