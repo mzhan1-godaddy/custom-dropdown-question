@@ -2,31 +2,24 @@ import './App.css';
 import {CustomDropdown} from "./CustomDropdown";
 import React, {useState} from "react";
 import {Card} from "./Card";
+import {Icon} from "./Icon";
 
-function createItem(label, value) {
+function createItem(label, value, iconText) {
     return {
         value,
-        label
+        label,
+        icon: <Icon text={iconText}/>
     };
 }
 
+const dinnerItems = [
+    createItem('Apple', 'food-apple', '🍎'),
+    createItem('Burger', 'food-burger', '🍔'),
+    createItem('Pizza', 'food-pizza', '🍕')
+];
+
 function App() {
     const [change, setChange] = useState();
-
-    const dinnerItems = [
-        createItem('Apple', 'food-apple'),
-        createItem('Burger', 'food-burger'),
-        createItem('Pizza', 'food-pizza'),
-        createItem('Apple', 'food-apple'),
-        createItem('Burger', 'food-burger'),
-        createItem('Pizza', 'food-pizza'),
-        createItem('Apple', 'food-apple'),
-        createItem('Burger', 'food-burger'),
-        createItem('Pizza', 'food-pizza'),
-        createItem('Apple', 'food-apple'),
-        createItem('Burger', 'food-burger'),
-        createItem('Pizza', 'food-pizza'),
-    ];
 
     function onChange(event) {
         setChange(event);
