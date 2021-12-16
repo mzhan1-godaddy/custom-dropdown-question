@@ -33,6 +33,3 @@ Here's some images displaying different states of the dropdown:
 ![After Current Value Element Clicked](./public/after-current-value-element-clicked.png)
 ### After Item Selected
 ![After Item Selected](./public/after-item-selected.png)
-
-
-Move along.
