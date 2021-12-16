@@ -2,7 +2,7 @@
 Create a reusable dropdown component, named <CustomDropdown> without using <select> or <option> tags
 
 ## Requirements
-- use HTML <button> elements for all elements (assume styling does not matter)
+- use HTML <div> elements for all elements.
 - <CustomDropdown/> should support the following input props:
     - id: string
     - items: array of dropdown items
